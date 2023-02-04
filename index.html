@@ -1,1 +1,337 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><base href="/my_business"/><link rel="icon" href="/my_business/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/my_business/logo192.png"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><link rel="manifest" href="/my_business/manifest.json"/><title>React App</title><link href="/my_business/static/css/main.9e305d26.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><script>!function(e){function r(r){for(var n,i,l=r[0],f=r[1],a=r[2],s=0,c=[];s<l.length;s++)i=l[s],Object.prototype.hasOwnProperty.call(o,i)&&o[i]&&c.push(o[i][0]),o[i]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&&(e[n]=f[n]);for(p&&p(r);c.length;)c.shift()();return u.push.apply(u,a||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,l=1;l<t.length;l++){var f=t[l];0!==o[f]&&(n=!1)}n&&(u.splice(r--,1),e=i(i.s=t[0]))}return e}var n={},o={1:0},u=[];function i(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,i),t.l=!0,t.exports}i.m=e,i.c=n,i.d=function(e,r,t){i.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,r){if(1&r&&(e=i(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(i.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)i.d(t,n,function(r){return e[r]}.bind(null,n));return t},i.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(r,"a",r),r},i.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},i.p="/my_business/";var l=this.webpackJsonpmy_business=this.webpackJsonpmy_business||[],f=l.push.bind(l);l.push=r,l=l.slice();for(var a=0;a<l.length;a++)r(l[a]);var p=f;t()}([])</script><script src="/my_business/static/js/2.e41192be.chunk.js"></script><script src="/my_business/static/js/main.b87cd570.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Responsive Portfolio Website">
+    <meta name="theme-color" content="#000000">
+    <meta >
+    <title> Seth Portfolio </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/Global.style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#">SETH.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--  -->
+
+    <section id="home" class="blue hero">
+        <div class="container grid">
+            <div class="hero-text align-content-start">
+                <p class="text-white">Hey, My name is Seth </p>
+                <h1 class=" text-white">I am a Email Developer</h1>
+                <!-- <h2 class="text-white">I am a Freelancer</h2> -->
+                <a href="#skills">HIRE ME</a>
+            </div>
+            <div class="hero-image">
+                <div class="hero-background"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="dark bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-dark">SKILLS</h2>
+            </div>
+            <div class="container">
+                <div class="row pb-3">
+                    <div class="col-lg-4 mb-3 mt-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h3 class="text-dark pt-3">HTML</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3 mt-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h3 class="text-dark pt-3">Css</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3 mt-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h4 class="text-dark pt-3">Responsive Emails</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3 mt-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h4 class="text-dark pt-3">JavaScript</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3 mt-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h4 class="pt-3 text-dark">Html Emails</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3 mt-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h4 class="pt-3 text-dark">Testing Emails</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="dark">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-dark">ABOUT</h2>
+                <p class="text-dark">Get to know more about me</p>
+            </div>
+            <div class="grid text-center">
+                <div class="about-image">
+                    <div class="about-background"></div>
+                </div>
+                <div class="about1">
+                    <h4 class="pt-4">Hello!</h4>
+                    <p class="p-3">
+                        My name is Seth Tetteh and I'm a passionate Front End Web Developer using modern web technologies to build websites and I focus on solving problems with new technologies.
+                    </p>
+                    <p class="p-3">I will love to hear from any company who wants to hire me. Please feel free to contact me.</p>
+                    <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#myModal"> Read More </a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="blue1 bg-light">
+        <div class="text-center">
+            <h2>PORTFOLIO</h2>
+        </div>
+        <div class="container">
+            <div id="myBtnContainer" class="text-center">
+                <button class="btn-1 active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn-1" onclick="filterSelection('emails')"> Emails </button>
+                <button class="btn-1" onclick="filterSelection('react')"> React </button>
+                <button class="btn-1" onclick="filterSelection('web')"> Web </button>
+            </div>
+                <!-- Portfolio Gallery Grid -->
+            <div class="row">
+                <div class="column emails">
+                    <div class="content">
+                        <img src="/image/about_image.jpg" alt="Mountains">
+                        <h4>Mountains</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column emails">
+                    <div class="content">
+                        <img src="/image/about_image.jpg" alt="Lights" >
+                        <h4>Lights</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column emails">
+                    <div class="content">
+                    <img src="/w3images/cars3.jpg" alt="Nature">
+                        <h4>Forest</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                
+                <div class="column react">
+                    <div class="content">
+                        <img src="/w3images/cars3.jpg" alt="Car">
+                        <h4>Retro</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column react">
+                    <div class="content">
+                    <img src="/w3images/cars3.jpg" alt="Car">
+                        <h4>Fast</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column react">
+                    <div class="content">
+                    <img src="/w3images/cars3.jpg" alt="Car">
+                        <h4>Classic</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+            
+                <div class="column web">
+                    <div class="content">
+                        <img src="/w3images/people1.jpg" alt="Car">
+                        <h4>Girl</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column web">
+                    <div class="content">
+                    <img src="/w3images/people2.jpg" alt="Car">
+                        <h4>Man</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column web">
+                    <div class="content">
+                    <img src="/w3images/people3.jpg" alt="Car">
+                        <h4>Woman</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+            <!-- END GRID -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="dark">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-white">CONTACT</h2>
+                <p class="text-white">Get in touch with me or send me an email</p>
+            </div>
+            <div class="grid contact-form">
+                <div>
+                    <form>
+                        <div>
+                            <input type="text" name="full name" placeholder="Full Name" required>
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div>
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div>
+                            <textarea name="message" rows="3" placeholder="Message"></textarea>
+                        </div>
+                        <input type="submit" value="Send Message" class="btn-outline-light">
+                    </form>
+                </div>
+
+                <div class="text-white">
+                    <div class="address details">
+                        <a href="#"><i class="fa fa-map-marker"></i></a>
+                        <div class="topic text-white">Address</div>
+                        <div class="text-one">123 Green Hane</div>
+                    </div>
+                    <div class="phone details">
+                        <i class="fa fa-phone "></i>
+                        <div class="topic text-white">Phone</div>
+                        <div class="text-one">+1 234 823 6283</div>
+                    </div>
+                    <div class="email details">
+                        <i class="fa fa-envelope"></i>
+                        <div class="topic text-white">Email</div>
+                        
+                        <div class="text-two">CodeWithEase.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="wave1">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div> -->
+    </section>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.2.2/kute.min.js" integrity="sha512-ggD4QBjUnITp5fa5Hq0qzaea2olsTpxwxPHrhF2lIXANHagX3mLrsEdyKNDRKxBlZ2sknQ/mEmLk0ojHN+dhzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+        }
+
+        function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        }
+        }
+
+        function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+        }
+        element.className = arr1.join(" ");
+        }
+
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+        }
+    </script>
+</body>
+</html>

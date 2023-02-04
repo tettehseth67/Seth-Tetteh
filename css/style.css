@@ -1,0 +1,489 @@
+:root {
+    --hr-color:rgba(0,0,0,0.35)
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color:#417cfa;
+}
+
+h1,h2 {
+    font-size: 2.5rem;
+    padding: 12px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+.text-center p {
+    color: #3e2093;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.blue {
+    background: #004aed;
+}
+
+.blue1 {
+    background: #004bed08;
+}
+
+.dark {
+    background:#FFFFFF;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(103% + 1.3px);
+    height: 262px;
+}
+
+.wave .shape-fill {
+    fill: #004aed;
+}
+.wave1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(103% + 1.3px);
+    height: 262px;
+}
+
+.wave1 .shape-fill {
+    fill: #004bed08;
+}
+
+
+.wave2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(103% + 1.3px);
+    height: 262px;
+}
+
+.wave2 .shape-fill {
+    fill: #fff;
+}
+
+.navbar {
+    background: #004aed!important;
+}
+
+.nav-item .nav-link {
+    color: #fff!important;
+    font-size: 14px;
+    width: 100px;
+    text-align: center!important;
+    text-transform: uppercase;
+}
+
+.nav-item .nav-link:hover {
+    background: #417cfa;
+}
+
+.navbar-toggler {
+    background: #fff!important;
+    outline: none!important;
+    border: none;
+}
+
+.hero-text h1, .hero-text h2{
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+
+.hero .grid {
+    grid-template-columns: 55% 45%;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.hero-text a {
+    border:none;
+    display: inline-block;
+    padding: 12px 32px;
+    background: #417cfa;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px #fff;
+    border-radius: 100%;
+    height:300px;
+    width:300px;
+    margin: 0 0px 0 100px;
+}
+
+.hero-background {
+    height:92%;
+    width:92%;
+    background-image: url(/image/IMG_20211027_140517~2.jpg);
+    background-size: cover;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.hero-background:hover {
+    transform: scale(1.07);
+    transition:1s ease-out;
+}
+
+.modal .modal-dialog {
+    position: relative;
+    top: 20%;
+    transform: translate(-50%);
+    max-width:800px;
+}
+
+@media screen and (max-width:992px) {
+    .hero-image {
+        display: none;
+    }
+
+    .hero .grid {
+        display: block;
+    }
+
+    .hero-text h1{
+        font-size: 25px;
+        padding-bottom: 30px;
+    }
+
+    .hero-text h2{
+        font-size: 25px;
+        padding-bottom: 30px;
+    }
+
+    .nav-item .nav-link {
+        text-align: start!important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hero-image {
+        display: none;
+    }
+
+    .hero .grid {
+        display: block;
+    }
+
+    .hero-text h1{
+        font-size: 25px;
+        margin: 0px 0px;
+    }
+
+    .hero-text h2{
+        font-size: 25px;
+        margin: 0px 0px;
+    }
+
+    .nav-item .nav-link {
+        text-align: start!important;
+    }
+
+    .text-center h2 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .text-center h2 {
+        font-size: 25px;
+    }
+}
+
+/* About */
+.about1 p {
+    color: #333;
+    letter-spacing: 1px;
+    line-height: 40px;
+    text-align: start;
+    font-size: 13px;
+}
+
+.about1 a {
+    text-decoration: none;
+    background:#004bed08;
+    display: inline-block;
+    padding: 12px 32px;
+    color: #000;
+}
+
+.about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px #004aed;
+    border-radius: 100%;
+    height:300px;
+    width:300px;
+    margin: 0 0px 0 100px;
+}
+
+.about-background {
+    height:92%;
+    width:92%;
+    background-image: url(/image/IMG_20211027_140517~2.jpg);
+    background-size: cover;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+@media screen and (max-width:600px) {
+    .about-image {
+        margin: auto;
+    }
+}
+
+/* Contact */
+#contact {
+    background:#000;
+}
+.contact-form {
+    padding-bottom: 30px;
+}
+
+input[type=text], input[type=email],textarea {
+    width: 100%; 
+    padding: 14px; 
+    border: 1px solid #3e2093; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 15px;
+    resize: vertical ;
+    font-family: 'Montserrat',sans-serif;
+    outline: none!important;
+}
+
+input[type=submit] {
+    color: #fff;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    background: #3e2093;
+    display: inline-block;
+    font-size: 18px;
+    outline: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat',sans-serif;
+    text-align: left;
+}
+
+input[type=submit]:hover {
+    background: #5029bc;
+    color: #fff;
+}
+
+.details {
+    margin: 16px;
+    text-align: center;
+}
+
+.details i {
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 15px;
+}
+
+.details .topic {
+    font-size: 17px;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.details .text-one.text-two {
+    font-size: 14px;
+    color: #afafb6;
+    margin-bottom: 15px;
+}
+
+
+/* Portfolio */
+#portfolio {
+    padding-bottom: 40px;
+    color: #333;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+    }
+
+    .row {
+    margin: 8px -16px;
+    padding-bottom: 40px;
+    }
+
+    /* Add padding BETWEEN each column (if you want) */
+    .row,
+    .row > .column {
+    padding: 8px;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+    width: 300px;
+    height: 200px;
+    display: none; /* Hide columns by default */
+    }
+
+    /* Clear floats after rows */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    /* Content */
+    .content {
+    background-color: white;
+    padding: 10px;
+    }
+
+    /* The "show" class is added to the filtered elements */
+    .show {
+    display: block;
+    }
+
+    /* Style the buttons */
+    .btn-1 {
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 8px;
+    color: #000;
+    }
+
+    /* Add a grey background color on mouse-over */
+    .btn-1:hover {
+    background-color: #ddd;
+    }
+
+    /* Add a dark background color to the active button */
+    .btn-1.active {
+    background-color: #666;
+    color: white;
+    }
+
+
+
+.circle {
+    width: 100%;
+    clear: both;
+    margin-top: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+.circle i {
+    color:#5029bc;
+    height: 62px;
+    width: 62px;
+    line-height: 62px;
+    border-radius: 50%;
+    background: rgb(241, 241, 241);
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+
+    .btn-1 {
+        margin:5px;
+    }
+}
+
+/* Skills Css */
+
+.card {
+    outline: none;
+    border: none;
+    width: 300px;
+    height: 100px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 0 40px;
+    /* box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); */
+    /* border-top: 2px solid #5029bc;  */
+}
+
+
+
+/* .card p {
+    color: #333;
+} */ 
+/* .card {
+    background:#ffffff;
+} */
+
+@media screen and (max-width:400px) {
+    
+}
+
+
+
